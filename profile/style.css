@@ -1,0 +1,173 @@
+body, html {
+	background-color: #616161;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	scroll-behavior: smooth;
+}
+
+.container {
+	color: white;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: radial-gradient(100% 100% at 4% 3%, #1f82f5 0%, transparent), radial-gradient( 100% 100% at var(--g2-1-x-position) var(--g2-1-y-position), #a221a8 -32%, transparent ), radial-gradient( 100% 100% at var(--g2-2-x-position) var(--g2-2-y-position), #1c4baa 0%, transparent ), #3e3e3e;
+	animation-name: g-2;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	transition-timing-function: ease-in-out
+}
+
+@property --g2-1-x-position { syntax: "<percentage>"; inherits: false; initial-value: 87.96875%; }
+
+@property --g2-1-y-position { syntax: "<percentage>"; inherits: false; initial-value: 91.1328125%; }
+
+@property --g2-2-x-position { syntax: "<percentage>"; inherits: false; initial-value: 13.398437500000002%; }
+
+@property --g2-2-y-position { syntax: "<percentage>"; inherits: false; initial-value: 82.734375%; }
+
+
+:root {
+
+--g2-1-x-position: 87.96875%
+
+--g2-1-y-position: 91.1328125%
+
+--g2-2-x-position: 13.398437500000002%
+
+--g2-2-y-position: 82.734375%
+
+}
+
+
+@keyframes g-2 { 50% { --g2-1-x-position: 15%; --g2-1-y-position: 15%; --g2-2-x-position: 61.21093749999999%; --g2-2-y-position: 13.750000000000002%; } }
+
+.scroll-down {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.shadow {
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.scroll-down span {
+	display: block;
+	width: 24px;
+	height: 24px;
+	border-left: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	transform: rotate(-45deg);
+	animation: bounce 1.5s infinite;
+}
+
+/* 矢印アニメーション */
+@keyframes bounce {
+	0%, 100% {
+			transform: translateY(0) rotate(-45deg);
+	}
+	50% {
+			transform: translateY(10px) rotate(-45deg);
+	}
+}
+
+#content {
+	height: 70vh;
+	padding: 15vh;
+	background: linear-gradient(90deg, #c1ecff, #ecbff5);
+	text-align: center;
+}
+
+
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 20px 1px #616161;
+
+}
+
+.line {
+	border: none;
+	border-top: 8px solid pink;
+	width: 200px;
+}
+
+footer {
+	color: white;
+	padding: 1vh;
+	background-color: #3e3e3e;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	font-size: 16px;
+	margin: 5px 0;
+}
+
+.wavy-text {
+	top: 45vh;
+	display: inline-block;
+}
+
+.wavy-text span {
+	display: inline-block;
+	animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-10px); }
+}
+
+/* 一文字ずつ異なるアニメーション開始時間を設定 */
+.wavy-text span:nth-child(1) { animation-delay: 0s; }
+.wavy-text span:nth-child(2) { animation-delay: 0.1s; }
+.wavy-text span:nth-child(3) { animation-delay: 0.2s; }
+.wavy-text span:nth-child(4) { animation-delay: 0.3s; }
+.wavy-text span:nth-child(5) { animation-delay: 0.4s; }
+.wavy-text span:nth-child(6) { animation-delay: 0.5s; }
+.wavy-text span:nth-child(7) { animation-delay: 0.6s; }
+.wavy-text span:nth-child(8) { animation-delay: 0.7s; }
+.wavy-text span:nth-child(9) { animation-delay: 0.8s; }
+.wavy-text span:nth-child(10) { animation-delay: 0.9s; }
+.wavy-text span:nth-child(11) { animation-delay: 1.0s; }
+.wavy-text span:nth-child(12) { animation-delay: 1.1s; }
+.wavy-text span:nth-child(13) { animation-delay: 1.2s; }
+.wavy-text span:nth-child(14) { animation-delay: 1.3s; }
+.wavy-text span:nth-child(15) { animation-delay: 1.4s; }
+.wavy-text span:nth-child(16) { animation-delay: 1.5s; }
+.wavy-text span:nth-child(17) { animation-delay: 1.6s; }
+.wavy-text span:nth-child(18) { animation-delay: 1.7s; }
+.wavy-text span:nth-child(19) { animation-delay: 1.8s; }
+.wavy-text span:nth-child(20) { animation-delay: 1.9s; }
+.wavy-text span:nth-child(21) { animation-delay: 2.0s; }
+
