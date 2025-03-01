@@ -1,0 +1,70 @@
+/* ダークでモダンなデザイン */
+body {
+	font-family: 'Arial', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #121212;
+	overflow: hidden;
+}
+
+/* 背景に斜線パターンを追加 */
+body::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: repeating-linear-gradient(
+			-45deg,
+			rgba(255, 255, 255, 0.05) 0px,
+			rgba(255, 255, 255, 0.05) 10px,
+			transparent 10px,
+			transparent 20px
+	);
+	z-index: -1;
+}
+
+/* 時計のスタイル */
+.clock-container {
+	width: 260px;
+	position: relative;
+	font-size: 4rem;
+	font-weight: bold;
+	color: #ffffff;
+	backdrop-filter: blur(4px);
+	background: rgba(255, 255, 255, 0.189);
+	text-shadow: 0 0 10px #00ffcc, 0 0 20px #008866;
+	padding: 20px 50px;
+	border-radius: 15px;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+	text-align: center;
+	user-select: none;
+	transition: transform 0.2s;
+}
+
+/* ホバー時のエフェクト */
+.clock-container:hover {
+	transform: scale(1.05);
+}
+
+.sikaku1 {
+  position: absolute;
+	top: 35%;
+	left: 35%;
+	height: 120px;
+	width: 120px;
+	background-color: #0080ff;
+}
+
+.sikaku2 {
+  position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 58%;
+	height: 120px;
+	width: 120px;
+	background-color: #ff00ae;
+}
