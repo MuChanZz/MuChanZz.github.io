@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタル時計</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container" id="clock-container">
+        <div class="clock" id="clock">00:00:00</div>
+    </div>
+    <div class="window hidden" id="draggable">
+        <div class="settings-window"><h2>SETTINGS</h2></div>
+        <div class="settings" id="settings">
+            <label>ボーダー幅:
+                <input type="range" id="border-width" min="0" max="20" value="5" class="bar">
+                <span id="border-width-value">5</span>px
+            </label>
+            <label>ボーダー色:
+                <input type="color" id="border-color" value="#000000" class="color">
+            </label>
+            <label>ボックスカラー:
+                <input type="color" id="box-color" value="#ffffff" class="color">
+            </label>
+            <label>文字カラー:
+                <input type="color" id="text-color" value="#000000" class="color">
+            </label>
+            <label>シャドウ色:
+                <input type="color" id="shadow-color" value="#000000" class="color">
+            </label>
+            <label>ブラー:
+                <input type="range" id="blur" min="0" max="20" value="5" class="bar">
+                <span id="blur-value">5</span>px
+            </label>
+            <label>文字サイズ:
+                <input type="range" id="font-size" min="10" max="100" value="40" class="bar">
+                <span id="font-size-value">40</span>px
+            </label>
+            <label>ボックス幅:
+                <input type="range" id="box-width" min="100" max="600" value="300" class="bar">
+                <span id="box-width-value">300</span>px
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.clock-container {
+    position: relative;
+}
+
+.clock {
+    font-size: 40px;
+    border: 5px solid #007bff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.window {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.settings-window {
+    text-align: center;
+    padding: 10px;
+    cursor: move;
+    background-color: #383c40;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.settings {
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #383c40;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+#border-width {
+    appearance: none;
+    width: 200px;
+    height: 12px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0066d3 25%, #555555 25%);
+    cursor: pointer;
+}
+
+#blur {
+    appearance: none;
+    width: 200px;
+    height: 12px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0066d3 25%, #555555 25%);
+    cursor: pointer;
+}
+
+#font-size {
+    appearance: none;
+    width: 200px;
+    height: 12px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0066d3 33.3%, #555555 33.3%);
+    cursor: pointer;
+}
+
+#box-width {
+    appearance: none;
+    width: 200px;
+    height: 12px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0066d3 40%, #555555 40%);
+    cursor: pointer;
+}
+
+.bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    background: #007bff;
+    box-shadow: none;
+}
+
+.bar::-moz-range-thumb {
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    background: #007bff;
+    box-shadow: none;
+  }
+
+.color {
+    width: 24px;
+    height: 26px;
+    vertical-align: -3px;
+    border: none;
+    background: none;
+}
